@@ -62,6 +62,29 @@ def clean_location(df, columna):
     df[columna] = np.where(df[columna].str.isnumeric(), np.nan, df[columna])  # valores numéricos como NaN
     return df
 
+def clean_activity(df, columna):
+    palabras_claves = {'surfing': 'surfing', 'swimming': 'swimming', 'fishing': 'fishing',
+                       'spearfishing': 'spearfishing', 'bathing': 'bathing'}
+
+    def clasificar_valor(valor):
+        for palabra, clasificacion in palabras_claves.items():
+            if palabra in str(valor).lower():
+                return clasificacion
+        return valor
+
+    df[columna] = df[columna].apply(clasificar_valor)
+    return df
+
+def categorize_string_1(string):
+    keywords = ['walking', 'standing', 'wading']
+    category = 'wading'
+
+    for keyword in keywords:
+        if keyword in str(string).lower():
+            return category
+
+    return string
+
 def limpiar_genero(df, columna):
     df[columna] = df[columna].astype(str)
     df[columna] = df[columna].apply(lambda x: re.sub(r'[^\w\s]', '', x))  # eliminar todos los símbolos
