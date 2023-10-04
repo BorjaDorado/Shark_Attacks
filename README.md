@@ -7,7 +7,7 @@ Los datos utilizados para este estudio han sido extraídos de [Kaggle](https://w
 
 [![sharks.jpg](https://i.postimg.cc/rpWWfMqb/sharks.jpg)](https://postimg.cc/sBjvXFQ9)
 
-## Reglas del proyecto:
+## Reglas del proyecto
 
 1. ***No se puede eliminar ninguna columna del Dataframe***, pero se pueden modificar los valores que contienen. 
   
