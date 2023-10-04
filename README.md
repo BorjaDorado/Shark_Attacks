@@ -1,7 +1,7 @@
 # Shark_Attacks
 ## Proyecto de limpieza de datos sobre ataques de tiburones.
 
-Este proyecto tiene como ***objetivo*** principal realizar una limpieza exhaustiva de un conjunto de datos sobre ataques de tiburones. Además, se realizará un análisis del ratio de mortalidad y se investigará si este varía dependiendo de la zona geográfica.
+Este proyecto tiene como ***objetivo*** principal realizar una ***limpieza*** exhaustiva de un conjunto ***de datos*** sobre ataques de tiburones. Además, se realizará un análisis del ratio de mortalidad y se investigará si este varía dependiendo de la zona geográfica.
 
 Los datos utilizados para este estudio han sido extraídos de [Kaggle](https://www.kaggle.com/datasets/teajay/global-shark-attacks?resource=download).
 
